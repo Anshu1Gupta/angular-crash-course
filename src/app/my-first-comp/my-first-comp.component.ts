@@ -19,9 +19,10 @@ export class MyFirstCompComponent {
         "name":this.name,
         "email":this.email,
         "message":this.message
-
       })
+     }
 
-
+     deleteMessage(index:number){
+      this.messages.splice(index,1);
      }
 }

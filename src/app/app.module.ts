@@ -11,6 +11,7 @@ import { MessageDetailsComponent } from './message-details/message-details.compo
   declarations: [
     AppComponent,
     MyFirstCompComponent,
+
     MessageDetailsComponent
   ],
   imports: [
@@ -18,6 +19,7 @@ import { MessageDetailsComponent } from './message-details/message-details.compo
     AppRoutingModule,
     FormsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

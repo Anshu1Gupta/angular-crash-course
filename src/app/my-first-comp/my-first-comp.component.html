@@ -33,22 +33,29 @@
 
   </div> -->
 
-  <table>
-    <thead>
-    <tr>
-      <th>#</th>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Message</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Hello</td>
-      <td>Kon</td>
-      <td>Hmm</td>
-      <td>Bol</td>
-    </tr>
-    </tbody>
-  </table>
+    <!-- <table *ngIf="isSubmitted">
+      <thead>
+      <tr>
+        <td>#id</td>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let msg of messages; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{msg.name}}</td>
+        <td>{{msg.email}}</td>
+        <td>{{msg.message}}</td>
+      </tr>
+      </tbody>
+    </table>
+     -->
+  <div class="flex-container"  *ngIf="isSubmitted">
+
+<app-message-details
+  *ngFor="let msg of messages; let i=index">
+</app-message-details>
+  </div>
 </div>
